@@ -23,7 +23,7 @@ const Projects = () => {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
+        <div className="">
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>xs=12</Paper>
