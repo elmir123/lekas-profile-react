@@ -4,6 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import cns_logo from "../assets/imgs/cns_logo_react.png";
+import ocea_logo from "../assets/imgs/ocea-logo.png";
+import summerfest from "../assets/imgs/summerfest.png";
+import dawn_new from "../assets/imgs/dawn-new.png";
+import cropped_erin from "../assets/imgs/cropped-erin-1.png";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,31 +36,33 @@ Always open to new experiences and excited for technical challenges.
 </Paper>
         
         </Grid>
+
         <Grid item xs={12}>
-        <div>
+            <Paper className={classes.paper}>
+            <h2>My Clients</h2>
+            </Paper>
             <Carousel>
                 <div>
-                    <img src="assets/imgs/cns_logo.png" alt="CANADIAN NUCLEAR SOCIETY" />
+                    <img className="curasel_image" src={cns_logo} alt="CANADIAN NUCLEAR SOCIETY" />
                     <p className="legend">CANADIAN NUCLEAR SOCIETY</p>
                 </div>
                 <div>
-                    <img src="assets/imgs/ocea-logo.jpeg" alt="OTTAWA CHILDBIRTH EDUCATION ASSOCIATION" />
+                    <img className="curasel_image" src={ocea_logo} alt="OTTAWA CHILDBIRTH EDUCATION ASSOCIATION" />
                     <p className="legend">OTTAWA CHILDBIRTH EDUCATION ASSOCIATION</p>
                 </div>
                 <div>
-                    <img src="assets/imgs/summerfrest.png" alt="DEEP RIVER SUMMERFEST" />
+                    <img className="curasel_image" src={summerfest} alt="DEEP RIVER SUMMERFEST" />
                     <p className="legend">DEEP RIVER SUMMERFEST</p>
                 </div>
                 <div>
-                    <img src="assets/imgs/dawn-new.png" alt="DAWN CANADA" />
+                    <img className="curasel_image" src={dawn_new} alt="DAWN CANADA" />
                     <p className="legend">DAWN CANADA</p>
                 </div>
                 <div>
-                    <img src="assets/imgs/cropped-erin-1.png" alt="ERIN SHAHEEN" />
+                    <img className="curasel_image" src={cropped_erin} alt="ERIN SHAHEEN" />
                     <p className="legend">ERIN SHAHEEN</p>
                 </div>
             </Carousel>
-        </div>
         </Grid>
 
         
