@@ -1,6 +1,13 @@
 .pageTitle{
     color: black;
 }
+.projectImg{
+    width: 400px;
+    float: right;
+}
 .curasel_image{
     width: 200px;
+}
+.clearfix{
+    clear: both;
 }
