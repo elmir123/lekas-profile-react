@@ -37,7 +37,7 @@ Future goal would be to customize the carousel module and achive these goals.
 Overall using react I simplified the loadind of the pages and content.
 
 The following image demonstrates the web application's appearance:
-![Lekas React Profile.](./assets/imgs/react-portfolio.png)
+![Lekas React Profile.](./src/assets/imgs/react-portfolio.png)
 
 
 To view the working app use the link below:
