@@ -1,7 +1,10 @@
 
 const Contact = () => {
     return (
-        <div>here Contact</div>
+        <div>
+            <h1 className="pageTitle">About Me</h1>
+            
+        </div>
     )
 }
 
