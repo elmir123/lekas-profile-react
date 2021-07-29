@@ -4,8 +4,8 @@ import logo from "../assets/imgs/logo192.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import {Navbar, Nav} from 'react-bootstrap'
+
 // import Container from 'react-bootstrap/Container'
 
 const NavbarBar = () => {
