@@ -1,35 +1,32 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import logo from "../assets/imgs/logo192.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+// import Container from 'react-bootstrap/Container'
 
-const Navbar = () => {
+const NavbarBar = () => {
     return (
-    <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container-fluid">
-            <a className="navbar-brand" data-aos="zoom-in" data-aos-offset="0" href="/myportfolio"><img className="logo" src={logo} alt="logo"/></a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <FontAwesomeIcon icon={faBars} style={{ color: "#e1b32c"}}/>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent" data-aos="zoom-out-left" data-aos-offset="0">
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <Link className="nav-item" to="/about">
-                        <li className="nav-link">About</li>
-                    </Link>
-                    <Link className="nav-item" to="/projects">
-                        <li className="nav-link">Projects</li>
-                    </Link>
-                    <Link className="nav-item" to="/contact">
-                        <li className="nav-link">Contact</li>
-                    </Link>
-                    <a href="https://my.indeed.com/p/elmirl-f4oghj6" className="nav-item" target="_blank" rel="noopener noreferrer"><li className="nav-link">Resume</li></a>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <>
+        <Navbar bg="light" expand="lg">
+  <Navbar.Brand as={Link} to="/about"><img className="logo" src={logo} alt="logo"/></Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="ml-auto">
+      <Nav.Link as={Link} to="/about">About</Nav.Link>
+      <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+      <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+      <Nav.Link href="https://my.indeed.com/p/elmirl-f4oghj6" target="_blank" rel="noopener noreferrer">Resume</Nav.Link>
+
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+        </>
+    
     )
 }
 
-export default Navbar
+export default NavbarBar
