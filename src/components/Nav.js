@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link className="nav-item" to="/contact">
                         <li className="nav-link">Contact</li>
                     </Link>
-                    <a href="/" className="nav-item" target="_blank" rel="noopener noreferrer"><li className="nav-link">Resume</li></a>
+                    <a href="https://my.indeed.com/p/elmirl-f4oghj6" className="nav-item" target="_blank" rel="noopener noreferrer"><li className="nav-link">Resume</li></a>
                 </ul>
             </div>
         </div>
